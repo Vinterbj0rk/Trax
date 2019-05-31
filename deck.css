@@ -1,0 +1,409 @@
+body
+{
+	margin: 0px;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	
+	background-image: linear-gradient(to right bottom, #eeeeee, #ececec, #ebeaea, #eae7e8, #e9e5e5);
+	
+	display: flex;
+}
+
+.cardCloseDiv
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.cardCloseImage
+{
+	height: 25px;
+	width: 25px;
+}
+
+.portrait
+{
+	pointer-events: none;
+	height: 48px;
+	width: 48px;
+}
+
+#myCanvas
+{
+	border:1px solid #d3d3d3;
+	width: 605;
+	height: 580;
+	display: none;
+}
+
+.card
+{
+	width: 80px;
+	height: 80px;
+	float: left;
+	cursor: pointer;
+	padding: 2px;
+	
+	position: relative;
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	background-color: #FFFFFF;
+}
+
+.cardName
+{
+	text-transform: capitalize;
+}
+
+.card1
+{
+	border: 3px double #FF3333;
+}
+
+.card2
+{
+	border: 3px solid #FF3333;
+}
+
+.card3
+{
+	border: 3px double #33FF33;
+}
+
+.card4
+{
+	border: 3px solid #33FF33;
+}
+
+.card5
+{
+	border: 3px double #3333FF;
+}
+
+.card6
+{
+	border: 3px solid #3333FF;
+}
+
+.initboard
+{
+		
+		width: 605px;
+		height: 465px;
+}
+
+.initrow
+{
+	clear: left;
+	height: 110px;
+}
+
+#initlist
+{
+	border: 1px solid #8B008B;
+	min-height: 50px;
+	width: 100%;
+}
+
+#inittitle
+{
+	background-color: #FF0000;
+}
+
+.floatleft
+{
+	float: left;
+}
+
+.floatright
+{
+	float: right;
+}
+
+.floatright:after
+{
+	clear: both;
+}
+
+#buttons
+{
+	width: 100%;
+}
+
+#leftbuttons
+{
+	float: left;
+	width: 50%;
+}
+
+#rightbuttons
+{
+	text-align: right;
+	float: right;
+	width: 50%;
+}
+
+#recallDiv
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#recallDiv img
+{
+    height: 30px;
+	width: 30px;
+}
+
+#output
+{
+		height: 100%;
+}
+
+#outputtitle
+{
+	text-align: center;
+	width: 100%;
+}
+
+#topstuff
+{
+	height: auto;
+	margin: 5px;
+}
+
+#poolen
+{
+	flex: 1;
+	margin-top: 0px;
+	width: 100%;
+	position: relative;
+}
+
+.createcard a
+{
+	width: 16.6%;
+	border: 1px solid #8B008B;
+	color: #000000;
+	text-decoration: none;
+	padding: 1px;
+}
+
+.createcard a:link    {color:#000000;}
+.createcard a:visited {color:#000000;}
+.createcard a:hover   {color:#000000;}
+.createcard a:active  {color:#000000;}
+
+#outputholder
+{
+	border: 1px solid #8B008B;
+	height: 299px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.createcard
+{
+	height: 44px;
+	text-align: center;
+	margin-top: 2px;
+}
+
+
+.nobullets
+{
+	list-style-type: none;
+	text-transform: capitalize;
+	clear: both;
+}
+
+
+.initbox
+{
+	float: left;
+	border: 1px solid #8B008B;
+	height: 110px;
+	width: 110px;
+	margin: 2px;
+	padding-left: 5px;
+	background-color: #FFFFFF;
+}
+
+.initbox .card
+{
+	height: auto;
+	width: auto%;
+}
+
+.initbox .portrait
+{
+	height: 16px;
+	width: 16px;
+	float: left;
+}
+
+.initbox .cardCloseDiv
+{
+	display: none;
+}
+
+.initbox .cardInit
+{
+	display: none;
+}
+
+.isdone
+{
+	text-decoration: line-through;
+	color: #aaaaaa;
+	cursor: pointer;
+}
+
+.notdone
+{
+	cursor: pointer;
+}
+
+.rightside
+{
+	border: 1px solid #8B008B;
+	width: 250px;
+	height: 576px;
+	margin-left: 10px;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+
+.grey
+{
+	color: grey;
+}
+
+[title~="0"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">0</text></svg>');
+}
+
+[title~="1"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">1</text></svg>');
+}
+
+[title~="2"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">2</text></svg>');
+}
+
+[title~="3"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">3</text></svg>');
+}
+
+[title~="4"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">4</text></svg>');
+}
+
+[title~="5"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">5</text></svg>');
+}
+
+[title~="6"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">6</text></svg>');
+}
+
+[title~="7"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">7</text></svg>');
+}
+
+[title~="8"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">8</text></svg>');
+}
+
+[title~="9"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">9</text></svg>');
+}
+
+[title~="10"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">10</text></svg>');
+}
+
+[title~="11"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">11</text></svg>');
+}
+
+[title~="12"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">12</text></svg>');
+}
+
+[title~="13"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">13</text></svg>');
+}
+
+[title~="14"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">14</text></svg>');
+}
+
+[title~="15"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">15</text></svg>');
+}
+
+[title~="16"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">16</text></svg>');
+}
+[title~="17"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">17</text></svg>');
+}
+[title~="18"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">18</text></svg>');
+}
+[title~="19"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">19</text></svg>');
+}
+[title~="20"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">20</text></svg>');
+}
+[title~="21"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">21</text></svg>');
+}
+[title~="22"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">22</text></svg>');
+}
+[title~="23"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">23</text></svg>');
+}
+[title~="24"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">24</text></svg>');
+}
+[title~="25"] {
+	background-color: #FFFFFF;
+	background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><text x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="30" fill="grey">25</text></svg>');
+}

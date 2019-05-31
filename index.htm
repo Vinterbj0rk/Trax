@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>Trax</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="deck.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="deck.js"></script>
+		<link rel="icon" href="./icon.gif" />
+		<!-- Test discord server invite link: https://discord.gg/fzndYjg -->
+	</head> 
+	<body>
+		<div class="initboard" id="initboardid">
+			<div class ="initrow">
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="25"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="24"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="23"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="22"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="21"></div>
+			</div>
+			<div class ="initrow">
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="20"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="19"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="18"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="17">
+					<!-- start For testing Purposes -->
+					<div class="card card1" id="card1556287158306" draggable="true" ondragstart="drag(event)"><div class="cardPicture" id="piccard1556287158306" onclick="changeIMG(event)"><img class="portrait" src="https://randomuser.me/api/portraits/thumb/men/26.jpg"></div><div class="cardName" contenteditable="true">mads johansen</div><div class="cardCloseDiv"><a href="#" onclick="return deleteThis(this);"><img class="cardCloseImage" src="./Close.jpg" <="" a=""></a></div></div>
+					<div class="card card1" id="card1556313501226" draggable="true" ondragstart="drag(event)"><div class="cardPicture" id="piccard1556313501226" onclick="changeIMG(event)"><img class="portrait" src="https://randomuser.me/api/portraits/thumb/men/74.jpg"></div><div class="cardName" contenteditable="true">elias ruona</div><div class="cardCloseDiv"><a href="#" onclick="return deleteThis(this);"><img class="cardCloseImage" src="./Close.jpg" <="" a=""></a></div></div>
+					<!-- end For testing Purposes -->
+				</div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="16"></div>
+			</div>
+			<div class ="initrow">
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="15"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="14"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="13">
+					<!-- start For testing Purposes -->
+						<div class="card card1" id="card1556287235908" draggable="true" ondragstart="drag(event)"><div class="cardPicture" id="piccard1556287235908" onclick="changeIMG(event)"><img class="portrait" src="https://randomuser.me/api/portraits/thumb/women/95.jpg"></div><div class="cardName" contenteditable="true">linda bennett</div><div class="cardCloseDiv"><a href="#" onclick="return deleteThis(this);"><img class="cardCloseImage" src="./Close.jpg" <="" a=""></a></div></div>
+					<!-- end For testing Purposes -->
+				</div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="12"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="11">
+					<!-- start For testing Purposes -->
+						<div class="card card3" id="card1556287241033" draggable="true" ondragstart="drag(event)"><div class="cardPicture" id="piccard1556287241033" onclick="changeIMG(event)"><img class="portrait" src="https://randomuser.me/api/portraits/thumb/women/9.jpg"></div><div class="cardName" contenteditable="true">lucia serrano</div><div class="cardCloseDiv"><a href="#" onclick="return deleteThis(this);"><img class="cardCloseImage" src="./Close.jpg" <="" a=""></a></div></div>
+					<!-- end For testing Purposes -->
+				</div>
+			</div>
+			<div class ="initrow">
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="10"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="9"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="8"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="7"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="6"></div>
+			</div>
+			<div class ="initrow">
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="5"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="4"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="3"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="2"></div>
+				<div class="initbox" ondrop="drop(event)" ondragover="allowDrop(event)" title="1"></div>
+			</div>
+			<div class ="initrow">
+			<div class="initbox" title="0"></div>
+			</div>
+			<canvas id="myCanvas" width="605" height="580">
+		</div>
+		<div class="rightside">
+			<div id="topstuff">
+				<div id="inittitle">
+					<div class="floatleft grey">Initiativlista</div>
+					<div class="floatright"><a href='#' onClick='return updateInitlist();'><img src="./nextTurn.png"></a></div>
+				</div>
+				<div id="initlist">
+					<!-- start For testing Purposes -->
+						<ul class="nobullets"><li class="isDone" onclick="flipThis(this)">17 mads johansen</li><li class="isDone" onclick="flipThis(this)">17 elias ruona</li><li class="notDone" onclick="flipThis(this)">13 linda bennett</li><li class="notDone" onclick="flipThis(this)">11 lucia serrano</li></ul>
+					<!-- end For testing Purposes -->
+				</div>
+				<div id="buttons">
+					<div id="leftbuttons">
+						<a href='#' onClick='return copyInitlistToClipboard();'><img src="./copy.png"></a>
+						<a href='#' onClick='return saveInitlistImage();'><img src="./copyimg.png"></a>
+					</div>
+					<div id="rightbuttons">
+						<a href='#' onClick='return sendToDiscordText();'><img src="./textToDiscord.png"></a>
+						<a href='#' onClick='return createDiscordImage();'><img src="./fancyPicToDiscord.png"></a>
+					</div>
+					<div id="rightbuttons">
+						<a href='#' onClick='return changeDiscordLink();'><img src="./changeDiscordConfig.png"></a>
+						<a href='#' onClick='return deleteDiscordLink();'><img src="./removeDiscordConfig.png"></a>
+					</div>
+				</div>
+			</div>
+			<div id="poolen">			
+				<div id="outputholder">
+					<div id="outputtitle">Operatörspool</div>
+					<div id="output" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				</div>
+				<div class="createcard">
+					<a href='#' onClick='return createCard(1);'>👤Foo</a>
+					<a href='#' onClick='return createCard(2);'>👤Foo*</a>
+					<a href='#' onClick='return createCard(3);'>👤Aibo</a>
+					<a href='#' onClick='return createCard(4);'>👤Aibo*</a>
+					<a href='#' onClick='return createCard(5);'>👤Anon</a>
+					<a href='#' onClick='return createCard(6);'>👤Anon*</a>
+				</div>
+				<div id="recallDiv">
+					<a href='#' onClick='return recallAllAgents();'><img src="./recall.png"></a>
+				</div>
+			</div>
+		</div>
+		<!--Buffrar grafik som används i script-->
+		<img src="./discordBox.png" style="display: none">
+	</body>
+</html>
